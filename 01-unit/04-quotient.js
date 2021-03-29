@@ -3,7 +3,7 @@
 // ==================================================
 function quotient(num1 = 0, num2 = 1) {
 if (num2 == 0) {
-  console.log("ERROR");
+  return "ERROR";
 }
 return num1 / num2;
 }
@@ -24,7 +24,7 @@ try {
   // --------------------------------------------------
   // It should return the text 'ERROR' when the second number is 0.
   var result = quotient(2, 0);
-  if (result !== Infinity) throw new Error('Expected quotient(2, 0) to be Infinity. Received: ' + result);
+  if (result !== "ERROR") throw new Error('Expected quotient(2, 0) to be "ERROR". Received: ' + result);
   
   // --------------------------------------------------
   // Test Case 3
